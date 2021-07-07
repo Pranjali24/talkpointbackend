@@ -74,6 +74,14 @@ io.on('connection', (socket) => {
 
 app.get('/',function(req,res){
   res.send("Hello from api")  
+  let token = jwt.sign(
+    { email: "pranjali@innovaeps.com", userId: "60e2af87ac5bb40d505f05fc" },
+    "shhhhh",
+    { expiresIn: "1h" }
+  );
+  res.status(200).json({
+    token : token
+  });
 })
 
 
