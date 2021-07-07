@@ -27,9 +27,6 @@ function displayMessage(username,message,date=null){
 io.on('connection', (socket) => {
   console.log('connected socket');
 
- socket.on('login',getdata=>{
-   console.log('socket login : ',getdata);
- })
 
  socket.on('joinRoom',userDetail=>{
    if(userDetail){
