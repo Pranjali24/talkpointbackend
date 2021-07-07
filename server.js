@@ -9,7 +9,7 @@ const app = require('express')();
 const server = require('http').createServer(app);
 const io = require('socket.io')(server, {
   cors: {
-      origins: ['http://localhost:4200']
+      origins: ['https://talk102.herokuapp.com/']
   }
 });
 
@@ -26,6 +26,10 @@ function displayMessage(username,message,date=null){
 }
 io.on('connection', (socket) => {
   console.log('connected socket');
+
+ socket.on('login',getdata=>{
+   console.log('socket login : ',getdata);
+ })
 
  socket.on('joinRoom',userDetail=>{
    if(userDetail){
@@ -101,6 +105,7 @@ app.get('/api/token',function(req,res) {
 //   Get detail from token
 app.get('/api/:token', function(req,res){
   let token=req.params.token
+  
   let decoded = jwt.verify(token, 'shhhhh');
 
   res.status(200).json({
