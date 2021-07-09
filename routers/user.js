@@ -3,24 +3,10 @@ const router = express.Router();
 var jwt = require("jsonwebtoken");
 
 const User = require("../model/schema");
+const userController = require('../controllers/user')
 
 // registration for new user
-router.post("/registration", (req, res) => {
-  let newUser = new User(req.body);
-  newUser
-    .save()
-    .then((result) => {
-      res.status(201).json({
-        message: "User Created Successfully !",
-      });
-    })
-    .catch((err) => {
-      console.log(err.message);
-      res.status(500).json({
-        message: "Email Id already in used !",
-      });
-    });
-});
+router.post("/registration", userController.registrationUser );
 
 // login user
 router.post("/login", (req, res) => {
