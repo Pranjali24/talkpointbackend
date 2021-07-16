@@ -32,7 +32,7 @@ app.use(express.json())
 app.use(cors)
 // app.use(main)
 app.use(express.urlencoded({extended:false}))
-// app.use("/",express.static(path.join(__dirname, "angular")))
+app.use("/",express.static(path.join(__dirname, "public", "talkPointWebApp")))
 
 app.use('/api/user/', user)
 app.use('/api/login', login)
@@ -50,6 +50,9 @@ app.set('io', io);
 // app.use((req,res,next) => {
 //     res.sendFile(path.join(__dirname, "angular", "index.html"));
 // })
+app.use('/', (req,res,next) =>{
+   res.sendFile(path.join(__dirname, "public", "talkPointWebApp", "index.html"));
+})
 
 server.listen(PORT , '192.168.1.21', () => {
     console.log(`Listening on port:: http://192.168.1.21:${PORT}`)
