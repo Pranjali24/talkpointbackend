@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="85" height="85" viewBox="0 0 85 85">
+  <defs>
+    <filter id="Ellipse_95" x="0" y="0" width="85" height="85" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#858585" flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_1214" data-name="Group 1214" transform="translate(-349 -331)">
+    <g transform="matrix(1, 0, 0, 1, 349, 331)" filter="url(#Ellipse_95)">
+      <circle id="Ellipse_95-2" data-name="Ellipse 95" cx="33.5" cy="33.5" r="33.5" transform="translate(9 6)" fill="#fff" opacity="0.5"/>
+    </g>
+    <g id="Group_1213" data-name="Group 1213" transform="translate(2.732 3.333)">
+      <g id="Group_1212" data-name="Group 1212" transform="translate(376 352)">
+        <path id="Path_15115" data-name="Path 15115" d="M18.15,75.714a1.751,1.751,0,0,0,1.75-1.75V68.49a1.75,1.75,0,0,0-3.5,0v5.475A1.751,1.751,0,0,0,18.15,75.714Z" transform="translate(-16.4 -45.381)" fill="#cb9c00"/>
+        <path id="Path_15116" data-name="Path 15116" d="M32.57,66.628a1.751,1.751,0,0,0,1.75-1.75V54.07a1.75,1.75,0,1,0-3.5,0V64.882A1.75,1.75,0,0,0,32.57,66.628Z" transform="translate(-25.486 -36.295)" fill="#cb9c00"/>
+        <path id="Path_15117" data-name="Path 15117" d="M47.05,57.5a1.751,1.751,0,0,0,1.75-1.75V39.59a1.75,1.75,0,1,0-3.5,0V55.755A1.748,1.748,0,0,0,47.05,57.5Z" transform="translate(-34.609 -27.172)" fill="#cb9c00"/>
+        <path id="Path_15118" data-name="Path 15118" d="M61.47,48.419a1.751,1.751,0,0,0,1.75-1.75V25.17a1.75,1.75,0,1,0-3.5,0v21.5A1.748,1.748,0,0,0,61.47,48.419Z" transform="translate(-43.695 -18.086)" fill="#cb9c00"/>
+        <path id="Path_15119" data-name="Path 15119" d="M75.89,39.333a1.751,1.751,0,0,0,1.75-1.75V10.75a1.75,1.75,0,0,0-3.5,0V37.584A1.751,1.751,0,0,0,75.89,39.333Z" transform="translate(-52.781 -9)" fill="#cb9c00"/>
+      </g>
+      <path id="Path_7875" data-name="Path 7875" d="M26.385,18.53l-1.33-1.33-3.263,3.263L18.53,17.2,17.2,18.53l3.263,3.263L17.2,25.055l1.33,1.33,3.263-3.263,3.263,3.263,1.33-1.33-3.263-3.263Z" transform="translate(358.801 334.8)" fill="#cb9c00"/>
+    </g>
+  </g>
+</svg>

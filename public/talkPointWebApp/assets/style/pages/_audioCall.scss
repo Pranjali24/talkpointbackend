@@ -1,0 +1,93 @@
+.audioCall{
+    .bgBlue{
+        height: 100vh;
+        width: 100%;
+        background-color: #0066dc;
+        padding: 25px 30px;
+        .otherPersion{
+            img{
+                border-radius: 15px;
+                box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3);
+                border: solid 2px $white;
+                height: 150px;
+            }
+        }
+        .userName{
+            h4{
+                font-size: 25px;
+                color: $white;
+            }
+            p{
+                color: $white;
+            }
+        }
+    }
+   
+    .mainPersion{
+        @media (min-width: $upToDesktopSize) {
+                
+            height: 75%;
+        }
+
+        .imgMain{
+            img{
+                height: 200px;
+                width: 200px;
+                border-radius: 50%;
+                box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1);
+            }
+        }
+    }
+    .buttonsRow{
+        margin-top: 14%;
+    
+        @media (min-width: $upToDesktopSize) {
+                
+            margin-top:0%;
+        }
+        ul{
+            display: flex;
+            justify-content: center;
+            padding-top: 20px;
+            margin-bottom: 0px;
+            @media (min-width: $upToDesktopSize) {
+                padding-top: 0px; 
+            
+            }
+            li{
+                margin-left: 45px;
+                &:first-child{
+                    
+                    margin-left: 0px;
+                }
+                button{
+                    border-radius: 5px;
+                    box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.2);
+                    background-color: $white;
+                    border: none;
+                    padding: 10px 15px;
+                }
+            }
+
+        }
+    }
+
+    .soundBar{
+        background-color: rgba(0, 0, 0, 0.3);
+        transform: rotateZ(-90deg);
+        width: 180px;
+        display: flex;
+        border-radius: 28px;
+        justify-content: center;
+        padding: 7px;
+        position: fixed;
+        bottom:30%;
+        left: 6%;
+        i{
+            color: $white;
+            margin-top: 10px;
+            transform: rotate(90deg);
+        }
+    }
+    
+}

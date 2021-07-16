@@ -1,0 +1,45 @@
+.ThemeSetting{
+    padding: 30px 30px 0px 30px;
+    .themeBox{
+        height: 100px;
+        margin-bottom: 20px;
+        transition-duration: 1s;
+        cursor: pointer;
+        &:hover{
+            transform: translateY(-7px);
+        }
+        &.one{
+            background-color: #EED7C0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &.two{
+            background-color: #BBE4E5;
+        }
+        &.three{
+            background-color: #AED8C7;
+        }
+        &.four{
+            background-color: #7ACBA5;
+        }
+        &.five{
+            background-color: #CBDAEC;
+        }
+        &.six{
+            background-color: #66D2D5;
+        }
+        &.seven{
+            background-color: #FEEFA9;
+        }
+        &.eat{
+            background-color: #63BDCF;
+        }
+        &.nin{
+            background-color: #D6D0F0;
+        }
+        &.ten{
+            background-color: #CECECE;
+        }
+    }
+}

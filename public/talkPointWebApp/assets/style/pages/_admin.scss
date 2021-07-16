@@ -1,0 +1,197 @@
+.SuperAdmin {
+  .chatUsersListDisplay {
+    padding: 20px;
+
+    .notNumber {
+      justify-content: space-between !important;
+
+      .imgBox {
+        display: flex;
+        justify-content: space-evenly;
+      }
+    }
+  }
+  .cardMenu{
+    position: relative;
+    .cardMenuButton{
+      position: absolute;
+      top: 0px;
+      right: 0px;
+    }
+  }
+  .usersListTab{
+   
+    .dropIcons{
+
+        i{
+          font-size: 19px !important;
+          padding-right: 14px;
+        }
+      
+    }
+    
+  }
+  
+  .userRowHeadFix {
+    .userListing.flexStart {
+      justify-content: flex-start !important;
+    }
+  }
+
+
+  h2 {
+    font-size: 39px;
+    font-weight: bold;
+    color: #0076FF;
+    line-height: 38px;
+  }
+
+  .resHead {
+    line-height: 38px;
+    font-weight: bold;
+    font-size: 21px;
+    margin-bottom: 10px;
+  }
+
+  .statusBox {
+    img {
+      padding: 5px;
+      border-radius: 50%;
+      height: 90px;
+      width: 90px;
+      object-fit: cover;
+    }
+  }
+
+  .contentBox {
+    padding-left: 20px;
+
+    h5 {
+      font-size: 25px;
+      font-weight: bold;
+      margin-bottom: 0px;
+    }
+
+    p {
+      margin-bottom: 0px;
+      font-size: 14px;
+    }
+
+  }
+
+  .sidePanel .panelSecond .userRowHeadFix {
+    min-height: 100px;
+    max-height: 200px;
+
+    @media(min-width:1440px) {
+
+      max-height: 300px;
+    }
+  }
+
+
+  .sidePanel .panelSecond .userRowHeadFix {
+    max-height: 265px;
+  }
+
+
+  .customAccordion {
+    .card {
+      background-color: transparent;
+      border: none;
+
+      .card-header {
+        cursor: pointer;
+        border-bottom: none;
+
+        .card-title {
+          font-size: 18px;
+          font-weight: 400;
+        }
+      }
+
+      .card-body {
+        padding: 20px 0px;
+      }
+    }
+
+    &.accordion .card-header:after {
+      font-family: 'FontAwesome';
+      content: "\f106";
+      float: right;
+    }
+
+    &.accordion .card-header.collapsed:after {
+      content: "\f107";
+    }
+  }
+  .userRowHeadFixList{
+    min-height: 100px;
+    height: calc(100vh - 250px);
+    overflow-y: auto;
+    // padding-right: 10px;
+    @media( min-width : $upToDesktopSize ){
+        
+        height: calc(100vh - 380px);
+    }
+}
+.userRow{
+    background-color: #f2f5ff;
+    padding: 5px;
+    border-radius: 12px;
+    box-shadow: 0px 3px 6px rgb(0 0 0 / 5%);
+    transition-duration: 0.5s;
+    cursor: pointer;
+    margin-bottom: 15px;
+    &:hover{
+        box-shadow: 0px 3px 6px rgb(0 0 0 / 20%);
+    }
+    .userListing{
+        @include flex();
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+   
+    .imgBox{
+        @include flex();
+        img{
+            padding: 5px;
+            border-radius: 50%;
+            height: 60px;
+            width: 60px;
+            object-fit: cover;
+        }
+    }
+    .contentBox{
+        padding: 9px;
+        padding-right: 25px;
+        h5{
+            font-size: 16px;
+            font-weight: normal;
+            line-height: 25px;
+            margin-bottom: 0px;
+        }
+        p{
+            font-size: 12px;
+            font-weight: normal;
+            line-height: 19px;
+            margin-bottom: 0px;
+        }
+    }
+}
+  .iconSize {
+    li {
+      i {
+        font-size: 20px;
+      }
+    }
+  }
+  .mat-tab-body-content {
+    height: 100%;
+    overflow: hidden;
+}
+
+ 
+}
+

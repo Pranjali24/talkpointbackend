@@ -1,0 +1,31 @@
+mat-form-field {
+    width: 100%;
+  }
+
+//   for admin permition popup
+  .cdk-global-overlay-wrapper, .cdk-overlay-container {
+    z-index: 10000 !important;
+    }
+
+    .mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar {
+      background-color: $blue;
+  }
+
+  button:focus {
+    outline: none !important;
+    outline: 0px auto -webkit-focus-ring-color;
+}
+  .mat-icon-button {
+    outline: none !important;
+  }
+
+
+.chatUsersListDisplay{
+  .mat-fab.mat-primary, .mat-flat-button.mat-primary, .mat-mini-fab.mat-primary, .mat-raised-button.mat-primary {
+    background-color: rgba(0, 65, 250, 0.5);
+  }
+}
+
+  .mat-fab.mat-primary, .mat-flat-button.mat-primary, .mat-mini-fab.mat-primary, .mat-raised-button.mat-primary {
+    background-color: $blue;
+}

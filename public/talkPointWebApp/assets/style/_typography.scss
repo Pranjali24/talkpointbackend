@@ -1,0 +1,212 @@
+body{
+    font-family: $font-family;
+    @include font(16px);
+    overflow-x: hidden;
+    @include font-weight (400);
+ }
+ *{
+  font-family: $font-family;
+}
+ a{
+   &:hover{
+    outline:none;
+    text-decoration:none;
+   }
+   &:focus{
+    outline:none;
+    text-decoration:none;
+   }
+ }
+
+.border50{
+  @include radius (50%);
+}
+.bg-blue{
+  background-color: $blueBg;
+}
+.text-blue{
+  color: $blueBg;
+}
+.text-green{
+  color: $textGreen;
+}
+ p{
+   @include font(16px);
+   @include line (24px);
+ }
+ h1{
+  @include heading($heading,40px,50px);
+   @include margin-bottom (0px);
+}
+h2{
+   @include heading($heading,32px,42px);
+     @include margin-bottom (0px);
+}
+h3{
+  @include heading($heading,30px,36px);
+   @include margin-bottom (0px);
+}
+h4{
+  @include heading($heading,24px,30px);
+   @include margin-bottom (0px);
+}
+h5{
+  @include heading($heading,18px,24px);
+   @include margin-bottom (0px);
+}
+h6{
+  @include heading($heading,16px,22px);
+   @include margin-bottom (0px);
+  }
+  
+ img{
+   max-width:100%;
+  }
+  
+ ul,ol{
+   list-style: none;
+   @include margin (0px);
+   @include padding (0px);
+ }
+ 
+ .pointer{
+   cursor: pointer;
+ }
+// .commonMargin{
+//   margin-top: 30px;
+// }
+
+.headSet{
+  padding:0px 30px;
+
+}
+
+
+/* setup tooltips */
+.customTooltip {
+  position: relative;
+  &:before{
+      display: block;
+      opacity: 0;
+      pointer-events: none;
+      position: absolute;
+      background: rgba(0,0,0,.75);
+      border-radius: 2px;
+      color: #fff;
+      content: attr(data-title);
+      font-size: 14px;
+      padding: 6px 20px;
+      top: 9px;
+      left: 56px;
+      white-space: nowrap;
+    }
+    &.expand:before {
+      transform: scale3d(.2,.2,1);
+      transition: all .2s ease-in-out;
+    }
+    &.expand:after {
+      transform: translate3d(0,6px,0);
+      transition: all .1s ease-in-out;
+    }
+    &.expand:hover:before,
+    &.expand:hover:after {
+      opacity: 1;
+      transform: scale3d(1,1,1);
+    }
+    &.expand:hover:after {
+      transition: all .2s .1s ease-in-out;
+    }
+}
+
+
+.dropdown-item.active, .dropdown-item:active {
+  color: $white !important;
+  text-decoration: none;
+  background-color: $blue;
+}
+
+// common use popup code start
+.commonPopsLideRight.modal.fade .modal-dialog.modal-dialog-slideout {
+  -webkit-transform: translate(100%,0)scale(1);
+  transform: translate(100%,0)scale(1);
+}
+.commonPopsLideRight.modal.fade.show .modal-dialog.modal-dialog-slideout {
+  -webkit-transform: translate(0,0);
+  transform: translate(0,0);
+  @include flex();
+  align-items: stretch;
+  -webkit-box-align: stretch;
+  height: 100%;
+}
+.commonPopsLideRight{
+  padding-right: 0px !important;
+  .modal-dialog-slideout {
+      min-height: 100%; 
+      width: 450px;
+      margin: 0 0 0 auto;
+      background: $white;
+      .modal-content{
+          border: 0;
+      }
+      .modal-body{
+          overflow-y: auto;
+          overflow-x: hidden;
+      }
+    }
+  }
+// common use popup code close
+
+.adminAddButton{
+  background: $blueLight;
+  height: 20px;
+  width: 20px;
+  color: $white;
+  border-radius: 50%;
+  padding: 4px 8px;
+  cursor: pointer;
+  &:focus{
+      outline: none;
+  }
+}
+
+// change scroll bar 
+.changeScroll{
+  scrollbar-width: thin;
+  scrollbar-color: #f3f5f7 rgb(236, 236, 236);
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    background: rgb(199, 196, 196); 
+  }
+  
+  &::-webkit-scrollbar-thumb:hover {
+    background: rgb(148, 145, 145); 
+  }
+}
+
+
+  input[type=range] {
+    height: 11px;
+    width: 130px;
+    border-radius: 3px;
+    background: $blue;
+    cursor: pointer;
+    margin-top: 12px;
+  }
+
+  /* All the same stuff for IE */
+  input[type=range]{
+    height: 11px;
+    width: 130px;
+    border-radius: 3px;
+    background: $blue;
+    cursor: pointer;
+    margin-top: 12px;
+  }
+

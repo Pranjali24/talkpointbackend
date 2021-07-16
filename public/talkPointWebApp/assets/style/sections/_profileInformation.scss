@@ -1,0 +1,93 @@
+#profileInformationPopUp.modal.fade .modal-dialog.modal-dialog-slideout {
+    -webkit-transform: translate(100%,0)scale(1);
+    transform: translate(100%,0)scale(1);
+}
+#profileInformationPopUp.modal.fade.show .modal-dialog.modal-dialog-slideout {
+    -webkit-transform: translate(0,0);
+    transform: translate(0,0);
+    @include flex();
+    align-items: stretch;
+    -webkit-box-align: stretch;
+    height: 100%;
+}
+#profileInformationPopUp{
+    padding-right: 0px !important;
+    .modal-dialog-slideout {
+        min-height: 100%; 
+        width: 450px;
+        margin: 0 0 0 auto;
+        background: $white;
+        .modal-content{
+            border: 0;
+        }
+        .modal-body{
+            overflow-y: auto;
+            overflow-x: hidden;
+            .mHeader{
+                @include flex();
+                align-items: center;
+                i{
+                    font-weight: bold;
+                    font-size: 22px;
+                    line-height: 41px;
+                    color: #575656;
+                }
+                h5{
+                    margin-bottom: 0;
+                    padding-left: 20px;
+                    font-weight: bold;
+                    font-size: 22px;
+                    line-height: 41px;
+                    color: #303030;
+                }
+            }
+            .profileInfo{
+                .userProfilePic{
+                    border-radius: 50%;
+                    height: 110px;
+                }
+                h4.userName{
+                    font-weight: 600;
+                    font-size: 19px;
+                    line-height: 30px;
+                }
+                .mediaLinksSection{
+                    .mediaImg{
+                        .des{
+                            @include flex();
+                            justify-content: space-between;
+                            align-items: center;
+                            margin-bottom: 10px;
+                            h4{
+                                color: $blue;
+                                margin-bottom: 0;
+                                font-size: 19px;
+                            }
+                        }
+                        .mediaData{
+                            @include flex();
+                            justify-content: space-around;
+                            align-items: center;
+                            div{
+                                padding:10px 0px 10px 10px;
+                                img{
+                                    height: 70px;
+                                    border-radius: 7px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .muteNotification{
+                    @include flex();
+                    justify-content: space-between;
+                    align-items: center;
+                    h4{
+                        margin-bottom: 0px;
+                        font-size: 19px;
+                    }
+                }
+            }
+        }
+    }
+}

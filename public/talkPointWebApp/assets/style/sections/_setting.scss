@@ -1,0 +1,41 @@
+.setting{
+    margin-top: 30px;
+    padding: 0px 20px;
+    .displayProfilePic{
+        display: flex;
+        align-items: center;
+        .nameBox{
+            padding-left: 30px;
+        }
+        img{
+            border-radius: 50%;
+            text-align: center;
+            height: 65px;
+            width: 65px;
+            object-fit: revert;
+            transition-duration: 0.5s;
+        }
+        h4{
+            margin-bottom: 0px;
+        }
+        p{
+            margin-bottom: 0px;
+        }
+    }
+    .changesArea{
+        margin-top: 20px;
+        ul{
+            li{
+                border-bottom: 1px solid #e4dfdf;
+                padding-top: 30px;
+            }
+        }
+        p{
+            font-size: 18px;
+            color: #636363;
+            img{
+                padding-right: 40px;
+            }
+        }
+    }
+}

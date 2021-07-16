@@ -1,0 +1,189 @@
+.videoCall{
+    .bgBlue{
+        height: 100vh;
+        width: 100%;
+        background-color: #0066dc;
+        background-image: url('../../images/videoCallSam.png');
+        background-repeat: no-repeat;
+        padding: 50px 0px 0px 70px;
+        background-size: 100% 100%; 
+        
+        @media (min-width: $upToDesktopSize) {
+            
+            padding: 60px 40px 0px 90px;
+        }
+        .videoCallMoreUser{
+
+            min-height: 200px;
+            height: 100%;
+            max-height: 400px;
+            overflow-y: auto;
+            
+            @media (min-width: $upToDesktopSize) {
+                
+                height: 100%;
+                max-height: 750px;
+            } 
+        }
+        .otherPersion{
+            margin-bottom: 20px;
+            img{
+                border-radius: 15px;
+                box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3);
+                border: solid 2px $white;
+                height: 145px;
+                width: 145px;
+                object-fit: cover;
+            }
+        }
+        .userName{
+            h4{
+                font-size: 25px;
+                color: $white;
+                margin-bottom: 0px;
+            }
+            p{
+                color: $white;
+                margin-bottom: 0px;
+            }
+        }
+    }
+    .mainPersion{
+        padding-right: 20px;
+            img{
+                height: 70px;
+                width: 70px;
+                border-radius: 7px;
+                border: solid 2px $white;
+                box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1);
+            }
+        
+    }
+    .buttonsRowMin{
+        left: 30%;
+        bottom: 10%;
+        position: fixed;
+        ul{
+            display: flex;
+            justify-content: center;
+            padding-top: 20px;
+            margin-bottom: 0px;
+            li{
+                &.left{
+                    margin-left: 25px;
+                }
+                button{
+                    border-radius: 5px;
+                    box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.2);
+                    background-color: $white;
+                    border: none;
+                    padding: 10px 15px;
+                }
+            }
+
+        }
+    }
+    .buttonsRow{
+
+        position: fixed;
+        left: 40%;
+        bottom: 10%;
+        // @media (min-width: $upToDesktopSize) {
+        //     height: 5%;
+        //     margin-top: 0%;
+        //     align-items: flex-end;
+        // }
+       
+        ul{
+            display: flex;
+            justify-content: center;
+            padding-top: 20px;
+            margin-bottom: 0px;
+            li{
+                &.left{
+                    margin-left: 25px;
+                }
+                button{
+                    border-radius: 5px;
+                    box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.2);
+                    background-color: $white;
+                    border: none;
+                    padding: 10px 15px;
+                }
+            }
+
+        }
+    }
+
+    .soundBar{
+        background-color: rgba(136, 131, 131, 0.6);
+        transform: rotateZ(-90deg);
+        width: 180px;
+        display: flex;
+        border-radius: 28px;
+        justify-content: center;
+        padding: 7px;
+        position: fixed;
+        bottom:30%;
+        left: 10%;
+        i{
+            color: $white;
+            margin-top: 10px;
+            transform: rotate(90deg);
+        }
+    }
+
+
+
+    .videoChatPanel{
+        background-image: url('../../images/mask.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 100%;
+        // height: 100%;
+        .chatingHeader {
+            background:transparent !important;
+            box-shadow: unset !important;
+            backdrop-filter: unset !important;
+            -webkit-backdrop-filter: unset !important;
+            border:none !important;
+        }
+        .chatingbody{
+            @media (min-width: $upToDesktopSize){
+
+                height: calc(100vh - 180px);
+            }
+        }
+        .chatingfooter{
+            background: transparent ;
+            box-shadow: unset; 
+            backdrop-filter: blur(3px); 
+            -webkit-backdrop-filter: unset;
+            border: unset;
+            .msgWriteBox{
+                .searchRow{
+                    .input-group {
+                        background-color: transparent;
+                        border: unset ;
+                        .form-control {
+                            border-bottom-right-radius: 0px;
+                            border-top-right-radius: 0px;
+                        }
+                       .input-group-prepend {
+                           span{
+                                background-color: $blue;
+                                border-radius: 4px;
+                                i{
+                                    opacity: 100%;
+                                    color: $white;
+                                    box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.2);
+                                }
+                            }
+                        } 
+                    } 
+                }
+            }
+        }
+    }
+    
+}

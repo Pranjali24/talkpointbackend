@@ -1,0 +1,190 @@
+.statusViewed{
+    border: 3px solid $active;
+}
+.statusUpload{
+    border: 3px dotted $active;
+}
+.statusNotViewed{
+    border: 3px solid $muted;
+}
+// .topStatusBar{
+//     padding: 20px 10px 10px 10px;
+// }
+.SliderSection{
+    h3{
+        margin-bottom: 20px;
+    }
+    .swiper-slide{
+        height: 80px !important;
+        width: 80px !important;
+        // @extend .statusViewed;
+        border-radius: 50%;
+        @include flex();
+        justify-content: center;
+        align-items: center;
+        img{
+            border-radius: 50%;
+            text-align: center;
+            height: 65px;
+            width: 65px;
+            object-fit: revert;
+            transition-duration: 0.5s;
+            box-shadow: 0px 3px 6px rgba(133, 133,133,16%);
+            &:hover{
+                height: 70px;
+                width: 70px;
+            }
+        }
+    }
+    .AddStatus{
+        position: relative;
+        
+        &::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0px;
+            background-color: rgba(0, 118, 255,0.5);
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+        }
+        &::before{
+            font-family: FontAwesome;
+            content: "\f067";
+            position: absolute;
+            top: 19px;
+            left: 24px;
+            font-size: 21px;
+            color: $white;
+            z-index: 1;
+        }
+        .swiper-slide{
+            border: 3px solid #E3E3E3 !important;
+        }
+        .customFileUpload{
+            position: absolute;
+            z-index: 999;
+            width: 60px;
+            top: 21px;
+            left: 6px;
+            opacity: 0;
+        }
+    }
+}
+
+
+// story view slider
+
+#storyViewPopup {
+    .modal-xl{
+      max-width: 100%;
+      &.modal-dialog{
+        margin: 0px;
+      }
+      .modal-content{
+        background-color: $white;
+        border: none;
+        border-radius: 0px;
+        .modal-body{
+          padding: 0px;
+          .carousel-indicators li {
+            width: 15px;
+            border-radius: 50%;
+            height: 15px;
+          }
+        }
+      }
+    }
+
+  .statusContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+
+    .bgBackground {
+      background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80');
+      filter: blur(3px);
+      -webkit-filter: blur(3px);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+     
+    }
+
+
+    .storyDialog {
+      height: 800px;
+      width: 800px;
+      border-radius: 4px;
+      z-index: 99;
+      .carousel-item{
+        img{
+          box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.5);
+          border-radius: 10px;
+        }
+      }
+      .backArrow {
+        z-index: 99999999;
+        font-size: 35px;
+        color: $white;
+        position: absolute;
+        left: 40px;
+        font-weight: bold;
+        top: 28px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 50%;
+        height: 60px;
+        width: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
+    }
+
+
+    .postComment {
+      z-index: 999;
+      margin-top: 35px;
+
+      .msgWriteBox {
+        .searchRow {
+          background-color: rgba(0, 0, 0, 0.4);
+          border-radius: 30px;
+
+          .input-group {
+            background-color: rgba(0, 0, 0, 0.4);
+            border-radius: 30px;
+            box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+
+            .input-group-text {
+              background-color: rgba(0, 0, 0, 0.7);
+              border: transparent;
+              margin-right: 0px;
+              padding: 10px 15px;
+              color: $white;
+              border-radius: 50%;
+            }
+
+            .form-control {
+              height: 50px;
+              border: unset;
+              outline: unset;
+              box-shadow: unset;
+              background-color: transparent;
+              border-bottom-right-radius: 30px;
+              border-top-right-radius: 30px;
+              color: whitesmoke;
+              padding-left: 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+
+// font family
+$font-family: 'Nunito', sans-serif;
+
+
+
+// text color 
+$heading:               #323232;
+$muted:                 #979797;
+$textBlue:              #0041FA;
+$textRed:               #ff1f38;
+$textGreen:             #30d158;
+$textLightBlack:        #707070;
+
+
+//  background color 
+$blue:                  #0041FA;
+$blueBg:                #0041FA;
+$active:                #033BDB;
+$white:                 #fff;
+$black:                 #000;
+$iceWhite:              #F3F3F3;
+$blueLight:             rgba(0, 65, 250, 0.5);
+
+
+
+// screen size
+$upToDesktopSize: 1440px;
+$extra_large_device: "only screen and (min-width: 1920px)";
+// $extra_big_screen: 'only screen and (min-width: 2600px) and (max-width: 3640px)';
+$Lg_screen:'only screen and (min-width: 1200px) and (max-width: 1440px)';

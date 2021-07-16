@@ -1,0 +1,86 @@
+.scannerContainer{
+	background-image: url('../../images/bannerScanner.png');
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	.bg-white{
+		position: relative;
+		padding: 27px;
+		border-radius: 20px;
+		transition: all 0.7s ease;
+        @include  box-shadow (0px 0px 5px rgba(48,48,48,20%));
+		background-color: #fff;
+        z-index: 1;
+        padding-right: 0px;
+		&::after{
+			content: '';
+			position: absolute;
+			background-image: url('../../images/mask.png');
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			width: 100%;
+			height: 100%;
+			top: 0px;
+			left: 0px;
+			z-index: -1;
+		}
+		&::before{
+			content: '';
+			position: absolute;
+			background-image: url('../../images/outer3.png');
+			background-repeat: no-repeat;
+			background-position: top;
+			background-size: 25%;
+			width: 100%;
+			height: 100%;
+			top: -100px;
+			// top: -70px;
+			left: 0px;
+			z-index: -1;
+		}
+		.elements{
+			padding-top: 60px;
+			padding-bottom: 60px;
+			position: relative;
+			z-index: 1;
+			&::after{
+				content: '';
+				position: absolute;
+				background-image: url('../../images/mobile.png');
+				background-repeat: no-repeat;
+				width: 100%;
+				height: 100%;
+				bottom: 0;
+	    		right: 0px;
+	    		background-position: right;
+	    		background-size: contain;
+	    		z-index: -1;
+			}
+			.scanCol{
+				padding: 20px;
+			}
+		}
+		.logoSet{
+			margin-bottom: 50px;
+		}
+		h1{
+			font-size: 39px;
+			line-height: 45px;
+			font-weight: bold;
+			margin-bottom: 30px;
+		}
+		.listForInformation{
+			p{
+				margin-bottom: 20px;
+				img{
+					height: 20px;
+				}
+				span{
+					padding-left: 15px;
+				}
+			}
+		}
+	}
+}

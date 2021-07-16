@@ -1,0 +1,40 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+// define
+@import './variable';
+@import './defineMixins';
+@import './typography';
+@import './customButtons';
+
+// sidebar layout
+@import './layout/sidePanel';
+
+
+// pages 
+@import './pages/scanner';
+@import './pages/home';
+@import './pages/audioCall';
+@import './pages/videoCall';
+@import './pages/admin';
+
+
+// section 
+@import './sections/statusSlider';
+@import './sections/chatbox';
+@import './sections/profile';
+@import './sections/setting';
+@import './sections/themeSetting';
+@import './sections/blockContact';
+@import './sections/profileInformation';
+@import './sections/popUps';
+@import './sections/starMessage';
+
+
+// material Ui
+@import './materialUi';
+
+
+//  Responsive
+@import './responsive';
